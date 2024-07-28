@@ -1,0 +1,83 @@
+<!-- #region HEAD -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CompService Головна</title>
+  <link rel="icon" href="img/icon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<!-- #endregion -->
+<body>
+
+  <!-- Header + Nav -->
+  <header>
+      <a href="index.html" class="logo-link"><img src="img/headerNew.webp" alt="CompService Жмеринка Header" class="header-img"></a>
+      <nav>
+          <ul class="nav__list">
+              <li class="nav__item">
+                  <a href="index.html">Головна</a>
+              </li>
+              <li class="nav__item">
+                  <a href="about.html">Про нас</a>
+              </li>
+              <li class="nav__item">
+                  <a href="services.html">Послуги</a>
+              </li>
+              <li class="nav__item">
+                  <a href="contact.html">Контакти</a>
+              </li>
+          </ul>
+      </nav>
+  </header>
+
+  <!-- Main content -->
+  <main class="container">
+
+      <!-- Contact buttons -->
+      <div class="contact-buttons">
+          <button class="contact-button order-status contact-button-link" onclick="window.__statusWidget.open()">Перевірити стан замовлення</button>
+          <button class="contact-button viber">
+              <a href="viber://chat?number=%2B380674335424" class="contact-button-link" target="_blank">Viber</a>
+          </button>
+          <button class="contact-button telegram">
+              <a href="https://t.me/CompService_ZM" class="contact-button-link" target="_blank">Telegram</a>
+          </button>
+          <button class="contact-button chat">
+              <a href="javascript:void(Tawk_API.toggle())" class="contact-button-link">Онлайн чат</a>
+          </button>
+          <button class="contact-button call-me" >
+              <a href="tel:+380674335424" class="contact-button-link" target="_blank">Передзвоніть мені</a>
+          </button>
+      </div>
+
+      <!-- Section -->
+      <section id="about" class="about">
+          <h2>CompService</h2>
+          <p>Крута фірма</p>
+      </section>
+      
+  </main>
+
+  <!-- Go to main button -->
+  <a href="index.html" class="go-main-button">На головну</a>
+  
+  <!-- Footer -->
+  <footer class="footer">
+      &copy; 2024 CompService Жмеринка
+  </footer>
+
+  <!-- <script src="js/script.js"></script> -->
+  <script type="text/javascript">
+        (function() {
+          var script = document.createElement("script");
+          script.type = "text/javascript"; script.async = true;
+          script.src = "https://web.remonline.app/static/dist/js/order-status-widget.js";
+          script.setAttribute("data-widget-key", "ce14cd4097c3d4dc2f80d3e185bcd6d3");
+          document.getElementsByTagName("head")[0].appendChild(script);
+        })()
+  </script>
+</body>
+</html>
